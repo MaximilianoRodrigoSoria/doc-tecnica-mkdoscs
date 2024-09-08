@@ -1,0 +1,71 @@
+site_name: nombreproyecto
+docs_dir: 'docs'
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: es
+  palette:
+    - scheme: default
+      primary: custom
+
+  logo: "assets/common/Logo_head.png"
+  favicon: "assets/common/footer-buho1.png"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/
+extra_css:
+  - "theme/stylesheets/extra.css"
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - "Documentación funcional":
+      - Diagramas:
+          - Dfd: "documentacion funcional/diagramas/dfd.md"
+      - Manual de usuario: "documentacion funcional/manual de usuario.md"
+  - "Documentación técnica":
+      - batchs:
+          - info: "documentacion tecnica/batchs/batchs.md"
+      - db:
+          - info: "documentacion tecnica/db/db.md"
+          - Procedures: "documentacion tecnica/db/procedures.md"
+          - Tablas: "documentacion tecnica/db/tablas.md"
+          - Vistas: "documentacion tecnica/db/vistas.md"
+      - Diagramas:
+          - info: "documentacion tecnica/diagramas/diagramas.md"
+          - Der: "documentacion tecnica/diagramas/der.md"
+          - Diccionario de datos: "documentacion tecnica/diagramas/diccionario de datos.md"
+      - bhsid:
+          - info: "documentacion tecnica/bhsid/bhsid.md"
+          - Servicios: "documentacion tecnica/bhsid/servicios.md"
+copyright: |
+  &copy; 2024

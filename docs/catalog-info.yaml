@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nombreproyeto
+  description: descripcion
+  annotations:
+    backstage.io/techdocs-ref: url:http://localhost/bh/bhsid/-/raw/main/
+spec:
+  type: service
+  owner: guests
+  lifecycle: desa
+  links:
+    - url: "http://localhost/bh/bhsid"
+      title: "titulo"
+      icon: "catalog"
