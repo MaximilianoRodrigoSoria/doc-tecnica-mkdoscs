@@ -14,10 +14,10 @@ theme:
     - content.code.copy
   language: es
   palette:
-    - scheme: default
-      primary: custom
+    primary: grey
+    accent: orange
 
-  logo: "assets/common/Logo_head.png"
+  logo: "assets/common/logo-hipotecario.png"
   favicon: "assets/common/footer-buho1.png"
 
 extra:
